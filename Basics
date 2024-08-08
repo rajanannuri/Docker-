@@ -7,4 +7,6 @@
 # docker ps -a
 # docker stop containerid
 # docker rm containerid
-# 
+# docker build .  - it means vi docker and index.html file present in samee directory or path to run docker build command.
+# docker build -t myname: latest .
+# docker run -d -p 80:80 imagename or imageid
