@@ -1,0 +1,10 @@
+# yum install docker
+# docker images
+# docker pull nginx or image name - get from docker hub.
+# docker run nginx. - interactive mode 
+# docker run -d nginx - detached mode
+# docker ps 
+# docker ps -a
+# docker stop containerid
+# docker rm containerid
+# 
