@@ -7,11 +7,15 @@
 # docker run -d nginx - detached mode
 # docker ps - shows running containers only
 # docker ps -a --> shows all containers and status
-# docker stop containerid
-# docker rm containerid
+# docker stop containerid. --> to stop container
+# docker rm containerid --> to remove container 
 # docker build .  - it means vi docker and index.html file present in samee directory or path to run docker build command.
 # docker build -t myname: latest .
 # docker run -d -p 80:80 imagename or imageid
 # docker pull nginx: required version - to download required version of images 
 # dock pull alpine. - low mb os
 # docker create nginx: latest - image id or image name: version
+# docker start containerid --> to start container
+# docker rm containerid --> to remove container
+# docker rmi imageid --> to remove images
+
