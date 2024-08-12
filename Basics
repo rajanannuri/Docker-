@@ -1,3 +1,5 @@
+# server have and run in 0 to 65535 ports
+# container or docker have and run in 0 to 65535
 # nginx AMI = any os + install nginx = nginx AMI
 # nginx image = base os + nginx installed = nginx image
 # yum install docker
