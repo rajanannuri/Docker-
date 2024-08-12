@@ -3,8 +3,8 @@
 # yum install docker
 # docker images. --> shows all images exist in the server 
 # docker pull nginx or image name --> pulls image from docker hub.
-# docker run nginx. - interactive mode 
-# docker run -d nginx - detached mode
+# docker run nginx. - interactive mode --> exist status
+# docker run -d nginx - detached mode --> running in bacground
 # docker ps - shows running containers only
 # docker ps -a --> shows all containers and status
 # docker stop containerid. --> to stop container
@@ -17,5 +17,7 @@
 # docker create nginx: latest - image id or image name: version
 # docker start containerid --> to start container
 # docker rm containerid --> to remove container
-# docker rmi imageid --> to remove images
-
+# docker rmi imageid or imagename --> to remove images
+# docker images -a -q --> to show all image ids
+# docker rmi 'docker images -a -q'  --> to delete all images
+# docker run = pull+create+start 
