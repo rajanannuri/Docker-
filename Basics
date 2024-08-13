@@ -25,4 +25,4 @@
 # docker run = pull+create+start
 # docker exec -it container id or name bash --> How can you login into the running container 
 # docker inspect image name or id/container id or name  --> to see IP address of docker image or container 
- 
+ #
