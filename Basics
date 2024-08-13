@@ -22,4 +22,7 @@
 # docker rmi imageid or imagename --> to remove images
 # docker images -a -q --> to show all image ids
 # docker rmi 'docker images -a -q'  --> to delete all images
-# docker run = pull+create+start 
+# docker run = pull+create+start
+# docker exec -it container id or name bash --> How can you login into the running container 
+# docker inspect image name or id/container id or name  --> to see IP address of docker image or container 
+ 
