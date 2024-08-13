@@ -25,4 +25,19 @@
 # docker run = pull+create+start
 # docker exec -it container id or name bash --> How can you login into the running container 
 # docker inspect image name or id/container id or name  --> to see IP address of docker image or container 
- #
+# docker image = base os(5mb to 250 mb) + application run time+ creted users + created directory+ installed application 
+# container/image= fat os (4Gb/3Gb) + application run time + created users + created directory+ installed application 
+# docker build -t url/username/image:version . 
+--> url means repository urls like to push docker image 
+  docker.io i.e docker hub
+  ECR --> elastic container registry
+  Nexus --> nexus repository 
+  and . means present directory 
+# docker build -t image: version . --> if we building image in the local server.
+# docker tag image: version url/username/image: version --> tagging image to the repository url
+# docker push image: version url/username/image: version 
+
+Run Vs Cmd
+--------------
+# 
+
