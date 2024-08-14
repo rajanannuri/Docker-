@@ -51,4 +51,5 @@ Run Vs Cmd
 # LABEL --> by using label we can filter images
   docker images -f label=
 # EXPOSE -- to show service running on which port.
+# ENV --> like same as LABEL 
 # 
