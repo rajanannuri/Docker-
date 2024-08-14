@@ -60,11 +60,19 @@ Run Vs Cmd
 # COPY 
 CMD VS ENTRY POINT:
 ------------------
-# 
+# cmd command can be overridden by another command at run time
+  ping google.com ping yahoo.com
+# entrypoint cannot be overridden 
+# cmd can supply default arguments to entypoint at run time 
+  cmd ["google.com"]
+  entrypoint ["ping"]
+# user can always overide cmd arguments at run time.
+
 USER :
 ------------------
 # it can instruct or not allow root access to the user
    USER Rajasekhar 
  WORKDIR :
 -----------
-# 
+# WORKDIR /tmp or any dir
+# after wordir instruction anything run in /tmp or per instruction only.
