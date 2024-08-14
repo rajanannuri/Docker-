@@ -52,4 +52,19 @@ Run Vs Cmd
   docker images -f label=
 # EXPOSE -- to show service running on which port.
 # ENV --> like same as LABEL 
-# COPY and ADD -- both are same ,  copy files from source to image.
+# COPY and ADD -- both are same ,  copy files from source to image or index.html
+  add have 2 special options 
+  it download files directly from internet by using file url
+  it directly untar the tar files
+# ADD sourcefile or url index.html
+# COPY 
+CMD VS ENTRY POINT:
+------------------
+# 
+USER :
+------------------
+# it can instruct or not allow root access to the user
+   USER Rajasekhar 
+ WORKDIR :
+-----------
+# 
