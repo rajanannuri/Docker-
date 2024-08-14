@@ -76,3 +76,10 @@ USER :
 -----------
 # WORKDIR /tmp or any dir
 # after wordir instruction anything run in /tmp or per instruction only.
+ARG VS ENV :
+-----------
+# arg instruction can provide values to the Dockerfile at build time 
+  ARG username --- username is like variable
+  RUN adduser $username
+  USER $username
+# docker build -t image:version --build-arg username=raja .
