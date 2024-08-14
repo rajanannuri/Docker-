@@ -99,7 +99,14 @@ command:
 # assign the values of ARG to ENV variables, so that we can access them inside the container as well 
 # we can use ARG as follows 
   ARG version 
-  FROM os:${version}
+  FROM os:${version:-8}   ---> 8 is default version 
 # docker build -t image:version --build-arg username=raja --build-arg trainer=raja --build-arg course=devops --build-arg version=9 .
 # ARG instruction is used to provide values or variables to other instructions
 # ARG instruction we use before to other instructions to supply/pass/execute values or variables 
+ONBUILD :
+-----------
+# these instruction is used for set up condition/ force users to follow some practices for other users at the time of using our image, it means
+ when we build a image and pushed that into docker hub repository and some used that image 
+conditions like index.html file required something 
+ONBUID ADD index.html /nginx/html
+# we can force every body should have index.html in their present directory other wise it not execute.
