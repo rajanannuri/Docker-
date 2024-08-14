@@ -78,8 +78,21 @@ USER :
 # after wordir instruction anything run in /tmp or per instruction only.
 ARG VS ENV :
 -----------
+# arg variables use at build time
+# env variables have access in the container 
 # arg instruction can provide values to the Dockerfile at build time 
   ARG username --- username is like variable
   RUN adduser $username
   USER $username
 # docker build -t image:version --build-arg username=raja .
+? How can we use arg variables inside the container.
+  ARG username 
+  RUN adduser $username
+  USER $username
+  ARG trainer
+  ARG course 
+  echo " trainer: ${trainer}, course: ${trainer}
+  ENV trainer=${trainer}
+  ENV course=${course}
+command: 
+# docker build -t image:version --build-arg username=raja --build-arg trainer=raja --build-arg course=devops .
