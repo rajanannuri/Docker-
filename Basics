@@ -39,5 +39,6 @@
 
 Run Vs Cmd
 --------------
+# run --> it is running at the time of image building
+# cmd --> it runs at the time of container creation 
 # 
-
