@@ -43,4 +43,5 @@ Run Vs Cmd
 # cmd --> it runs at the time of container creation 
 # every container is a process 
 # systemctl commands not working in containers
-# to run services in containers, we need to give executable commands 
+# to run services in containers, we need to give executable commands and that executable commands will run in fore ground.
+# CMD ["nginx", "-g", "daemon off;"]
