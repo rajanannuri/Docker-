@@ -96,3 +96,9 @@ ARG VS ENV :
   ENV course=${course}
 command: 
 # docker build -t image:version --build-arg username=raja --build-arg trainer=raja --build-arg course=devops .
+# assign the values of ARG to ENV variables, so that we can access them inside the container as well 
+# we can use ARG as follows 
+  ARG version 
+  FROM os:${version}
+# docker build -t image:version --build-arg username=raja --build-arg trainer=raja --build-arg course=devops --build-arg version=9 .
+
