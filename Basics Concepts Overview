@@ -35,13 +35,20 @@
   and . means present directory 
 # docker build -t image: version . --> if we building image in the local server.
 # docker tag image: version url/username/image: version --> tagging image to the repository url
-# docker push image: version url/username/image: version 
+# docker push image: version url/username/image: version
+
+DOCKER FILE CONTENT:
 
 Run Vs Cmd
 --------------
-# run --> it is running at the time of image building
-# cmd --> it runs at the time of container creation 
+# FROM --> Base OS
+# RUN--> it is running at the time of image building
+# CMD --> it runs at the time of container creation 
 # every container is a process 
 # systemctl commands not working in containers
 # to run services in containers, we need to give executable commands and that executable commands will run in fore ground.
 # CMD ["nginx", "-g", "daemon off;"]
+# LABEL --> by using label we can filter images
+  docker images -f label=
+# EXPOSE -- to show service running on which port.
+# 
